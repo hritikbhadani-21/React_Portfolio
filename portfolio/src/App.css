@@ -1,0 +1,340 @@
+/* General Body Styles */
+body {
+  background-color: #b3d7ff; /* Light blue background */
+  margin: 0; /* Remove default margin */
+  font-family: 'Arial', sans-serif; /* Set a default font for the body */
+}
+
+/* Centered Body Section */
+.centered-section { /* Renamed from body1 to centered-section */
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container Styles */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  text-align: center; /* Center text in container */
+}
+
+/* Text Section Styles */
+.text-section {
+  max-width: 50%;
+}
+
+.text-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* Button Styles */
+.btn-custom {
+  background-color: #4a6cf7;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-transform: lowercase;
+  font-size: 1rem;
+  border: none;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.btn-custom:hover {
+  background-color: #3a5bcf; /* Darker shade on hover */
+}
+
+/* Image Section */
+.image-section img {
+  max-width: 100%;
+}
+
+/* Image Container */
+.image-container {
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  width: 150px;
+  height: 150px;
+}
+
+/* Navbar Container */
+.navbar {
+  background-color: #b3d7ff; /* Matches the body background */
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  justify-content: space-between;
+}
+
+/* Brand Logo in Navbar */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+/* Navbar Links */
+.navbar-nav {
+  display: flex;
+  gap: 20px; /* Space between links */
+}
+
+.navbar-nav .nav-link {
+  color: black;
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #e1ebff; /* Light hover effect */
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  position: relative;
+  background-color: #d0e2ff;
+}
+
+.navbar-nav .nav-link.active::after {
+  content: '•';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  color: black;
+}
+
+/* About Me Section */
+.about-me {
+  font-size: 50px;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Description Box */
+.description {
+  background-color: #f8f9fa;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  max-width: 600px;
+  text-align: left;
+}
+
+.description p {
+  margin: 0;
+}
+
+/* Download Button */
+.download-btn {
+  display: block;
+    margin: 0 auto;
+}
+
+.download-btn a {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.download-btn a:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.download-btn i {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  animation: fadeIn 2s;
+}
+
+.contact-form h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.contact-form h1::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: black;
+  margin: 10px auto;
+}
+
+/* Form Control Styles */
+.form-control {
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  animation: slideIn 1s; /* Added animation for form controls */
+}
+
+.form-control.name {
+  border-color: #b4d455; /* Border color for name input */
+}
+
+.form-control.email {
+  border-color: #7b5fcf; /* Border color for email input */
+}
+
+.form-control.message {
+  border-color: #b455cf; /* Border color for message input */
+}
+
+/* Send Button Styles */
+.btn-send {
+  display: block;
+  width: 100px;
+  margin: auto;
+  padding: 10px;
+  border: 2px solid transparent; /* Added transparent border for consistency */
+  border-radius: 10px;
+  background: linear-gradient(to right, #b455cf, #b4d455);
+  color: black;
+  font-weight: bold;
+  animation: bounce 2s infinite; /* Added bounce animation */
+  cursor: pointer; /* Change cursor to pointer for better UX */
+}
+
+/* Illustration Styles */
+.illustration {
+  text-align: center;
+  margin-bottom: 20px;
+  animation: fadeIn 2s; /* Added fade-in animation */
+}
+
+.illustration img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-30px); }
+  60% { transform: translateY(-15px); }
+}
+
+/* General Heading Styles */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px; /* Space below the heading */
+}
+
+/* Project Image Styles */
+.project-img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 30px; /* Space below project images */
+}
+
+/* Project Row Styles */
+.project-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow wrapping of project columns */
+}
+
+/* Project Column Styles */
+.project-col {
+  flex: 1 1 45%; /* Flex-grow, flex-shrink, and basis */
+  max-width: 45%; /* Maximum width for columns */
+  margin: 10px; /* Space around columns */
+}
+
+/* Service Card Styles */
+.service-card {
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Prevent overflow */
+  margin: 20px; /* Space around cards */
+  transition: transform 0.2s; /* Smooth transform on hover */
+}
+
+.service-card:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.service-card img {
+  width: 100%; /* Full width for images */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.service-card .card-body {
+  padding: 15px; /* Padding inside card body */
+  text-align: center; /* Center text in card body */
+}
+
+.service-card .card-body h5 {
+  font-size: 1.25rem; /* Font size for card title */
+  margin-bottom: 10px; /* Space below title */
+}
+
+.service-card .card-body p {
+  color: #888; /* Gray color for paragraph text */
+  margin-bottom: 15px; /* Space below paragraph */
+}
+
+.service-card.uiux {
+  border-color: #ff4d4d; /* Red border for UI/UX */
+}
+
+.service-card.machine-learning {
+  border-color: #4d4dff; /* Blue border for Machine Learning */
+}
+
+.service-card.graphics-designer {
+  border-color: #4d4dff; /* Blue border for Graphics Designer */
+}
